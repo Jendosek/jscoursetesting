@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Відгуки про розкішні бренди</title>
+</head>
+<body>
+  <h1>Ласкаво просимо до відгуків про продукцію розкішних брендів</h1>
+  <h2>Надайте свій відгук</h2>
+  <label for="name">Ім'я:</label><br>
+  <input type="text" id="name" placeholder="Ваше ім'я" required><br>
+  <label for="age">Вік:</label><br>
+  <input type="number" id="age" placeholder="Ваш вік" required><br>
+  <label for="email">Електронна пошта:</label><br>
+  <input type="email" id="email" placeholder="Ваша електронна пошта" required><br>
+  <label for="job">Робота:</label><br>
+  <input type="text" id="job" placeholder="Ваша робота" required><br>
+  <label for="designation">Посада:</label><br>
+  <input type="text" id="designation" placeholder="Ваша посада" required><br>
+  <label for="productType">Тип продукту:</label><br>
+  <select id="productType" required>
+    <option value="perfume">Парфуми</option>
+    <option value="cream">Крем</option>
+    <option value="oils">Масла</option>
+  </select><br>
+  <label for="feedbackText">Відгук:</label><br>
+  <textarea id="feedbackText" rows="5" cols="30" placeholder="Введіть ваш відгук тут" required></textarea><br>
+<button id="submitBtn">Надіслати відгук</button>
+<hr>
+<div id="userInfo" style="display: none;">
+  <h2>Інформація про користувача:</h2>
+  <p>Ім'я: <span id="userName"></span></p>
+  <p>Вік: <span id="userAge"></span></p>
+  <p>Електронна пошта: <span id="userEmail"></span></p>
+  <p>Робота: <span id="userJob"></span></p>
+  <p>Посада: <span id="userDesignation"></span></p>
+  <p>Відгук для <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+</div>
+<script src="./product_survey.js"></script>
+</body>
+</html>
