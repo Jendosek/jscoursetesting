@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Аналіз тесту швидкості</title>
+</head>
+<body>
+  <h1>Аналіз швидкості набору тексту</h1>
+
+    <label for="inputText">Наберіть наступний текст:</label><br>
+    <textarea id="inputText"  cols="50" rows="5" readonly placeholder="Приготуйтеся набрати..."></textarea><br>
+
+    <label for="userInput">Ваш набір тексту:</label><br>
+    <textarea id="userInput"  cols="50" rows="5" placeholder="Почніть набирати, коли будете готові"></textarea><br>
+    <button onclick="startTest()">Почати тест</button>
+    <button onclick="endTest()">Завершити тест</button>
+    <div id="output"></div>
+    <script src="./speed_analysis.js"></script>
+</body>
+</html>
